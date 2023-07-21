@@ -1,0 +1,28 @@
+Where spark fits into big data world
+	- At the center of the spark universe is spark core
+	- Spark core will use both memory and disk while processing the data
+	- Api are python, scala, java and R
+	- Around Spark core there were high level libraries
+		○ SPARK SQL
+			- It works against a special type of RDD called schema RDD which is replaced by dataframe
+			- Lot of the HIVE query will work automatically on the SPARK SQL - full compatibility for the HIVE query (out of the box replacement for HIVE )
+			- Standard connector jdbc/odbc drivers and simba connectors for Spark sql (Tableau uses simba drivers to send queries to spark sql to run on scale)
+		○ SPARK STREAMING
+			- Netflix is one of the biggest users of spark streaming
+		○ Mlib & GraphX
+			- Common ML algorithms : Classification
+			- Regression
+			- Collabrative filtering
+			- Dimensional reduction
+		○ Blink DB
+			- Its a alpha project , running interactive sql query
+			- Here we can mention how much accuracy you want in the result of your query.
+		○ Tachyon
+			- Data sharing across cluster (java like API) 
+	- Resource Managers
+		○ Co-ordinates the running and execution of SPARK
+			- LOCAL MODEL
+			- YARN (BALL)
+			- MESOS (mediator in Greek) - some of the people at Brakelly ask him how to use MESOS, he made an application and named SPARK and it got the life on its own
+			- STANDALONE mode
+		○ All of the bottom, three can be made available through zoo keeper
