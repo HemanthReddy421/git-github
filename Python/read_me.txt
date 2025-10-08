@@ -1,2 +1,2 @@
-this is something we changed in conflict branch
-this is conflict new line
+This is data from master branch directly.
+This is a new line in master
