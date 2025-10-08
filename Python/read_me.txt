@@ -1,2 +1,2 @@
-this is something we changed in conflict branch
-this is conflict new line
+Conflict Branch: data
+this is new here
